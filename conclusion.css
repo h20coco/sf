@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(32, 90, 107) ;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.menu {
+    background-color: black;
+}
+.menu ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+   /* items del menu */
+   
+   .menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   .menu ul li:hover {
+    height: auto;
+    width: auto;
+    background:#125a56;
+    box-shadow: .1px .1px 10px 1px #ffffff;
+   }
+   /* menu desplegable */
+
+.menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgb(0, 0, 0);
+    padding:0;
+   }
+   
+   /* items del menu desplegable */
+   
+   .menu ul ul li {
+    float:none;
+    width:152px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   .menu ul ul a {
+    line-height:300%;
+    padding:10px 15px;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   .menu ul li:hover > ul {
+    display:block;
+   }
+h1{
+    font: italic bold 300% Bernard MT Condensed;
+    text-shadow: .10em .10em .1em rgb(120, 211, 223);  
+    text-transform: capitalize;
+    padding-left: 50px; 
+    color: #125a56; 
+    padding: 2px;
+    margin: 20px; 
+}
+h2{
+    font: italic bold 200% Bernard MT Condensed;
+    text-shadow: .10em .10em .1em rgb(120, 211, 223);  
+    text-transform: capitalize;
+    padding-left: 50px; 
+    color: #125a56; 
+    padding: 2px;
+    margin: 20px; 
+}
+.cont{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-gap: .5em;
+}
+.main {
+    background-color:  #848483; 
+    grid-column: 1/2;
+    grid-row: 3/4;
+    
+    padding-left: 30px;
+    padding-right: 20px;
+    font-size: 20pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main_aside {
+    background-color:  #ffffff;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.escudo {
+    width: 100%;
+}
+.logotipo {
+    width: 100%;
+}
